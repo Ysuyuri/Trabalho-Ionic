@@ -1,0 +1,30 @@
+<app-header titulo="Calendario"></app-header>
+<ion-content>
+  <ion-button (click)="presentActionSheet()" expand="full" color="light">2021-2</ion-button>
+  <ion-content color="secondary">
+  <ion-button shape="round" size="large" expand="full" color="secondary">Agosto</ion-button>
+  <ion-button shape="round" size="large" expand="full" color="secondary">Setembro</ion-button>
+  <ion-button shape="round" size="large" expand="full" color="secondary">Outubro</ion-button>
+  <ion-button shape="round" size="large" expand="full" color="secondary">Novembro</ion-button>
+  <ion-button shape="round" size="large" expand="full" color="secondary">Dezembro</ion-button>
+  <ion-button shape="round" size="large" expand="full" color="secondary">Sair</ion-button>
+</ion-content>
+</ion-content>
+
+<ion-tabs>
+  <!-- Tab bar -->
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="account" routerLink="/inicio">
+      <ion-icon name="person"></ion-icon>
+      <ion-title>Inicio</ion-title>
+    </ion-tab-button>
+    <ion-tab-button tab="Notas" routerLink="/notas">
+      <ion-icon name="calculator-outline"></ion-icon>
+      <ion-title>Notas</ion-title>
+    </ion-tab-button>
+    <ion-tab-button tab="Sair">
+      <ion-icon name="log-out-outline"></ion-icon>
+      <ion-title>Sair</ion-title>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
